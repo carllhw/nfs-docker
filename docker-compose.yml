@@ -1,0 +1,9 @@
+nfs:
+  image: carllhw/nfs-server
+  privileged: true
+  ports:
+    - "2049:2049"
+  volumes:
+    - /exports
+  command:
+    - /exports
